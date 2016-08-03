@@ -1,0 +1,84 @@
+@page cover
+  margin: 0;
+  padding: 0;
+
+  for item in all_top
+    @{item}
+      content: ''
+
+  for item in all_bottom
+    @{item}
+      content: ''
+
+.frontcover {
+  page: cover;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.cover-image {
+  position: relative;
+  background-image: url("images/1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  width: 100%;
+  prince-background-image-resolution: "300dpi";
+  height: 61.8vh;
+  @media print {
+    height: 297mm*0.618;
+  }
+}
+.cover-title {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  max-width: 1000px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  @media print {
+    bottom: 10pt;
+  }
+  h1 {
+    font-size: 80px;
+    color: #fff;
+    margin-bottom: 0;
+    @media print {
+      margin: 0 32pt;
+      font-size: 40pt;
+      vertical-align: bottom;
+    }
+  }
+}
+.cover-text {
+  position: normal;
+  font-size: 30px;
+  font-style: italic;
+  line-height: 1.3em;
+  font-family: 'Merryweather', serif;
+  max-width: 1000px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  @media print {
+    margin: 10pt 32pt 10pt;
+    padding: 0;
+    font-size: 16pt;
+  }
+}
+/* first page */
+@page :first {
+  @bottom-right {
+    content: normal;
+    margin: 0;
+  }
+
+  @bottom-left {
+    content: normal;
+    margin: 0;
+  }
+}

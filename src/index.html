@@ -1,21 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Project Name</title>
-
-  <!-- <link rel="stylesheet"  media="screen" href="/vendor.min.css" charset="utf-8" /> -->
-  <link rel="stylesheet" href="index.css" media="screen" title="no title" charset="utf-8">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  {% block meta %}{% endblock %}
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  {% block header %}{% endblock %}
 </head>
 <body>
-
-  <div class="container">
-    <!-- This is where nunjucks inserts files -->
-    <% block content %><% endblock %>
-  </div>
-
-  <!-- <script src="/vendor.min.js" charset="utf-8"></script> -->
+  {% block content %}{% endblock %}
   <script src="index.js" charset="utf-8"></script>
+  {% block body_end %}{% endblock %}
 </body>
 </html>

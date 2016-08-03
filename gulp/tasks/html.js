@@ -1,8 +1,11 @@
 var gulp = require('gulp');
 var config = require('../gulp.config')();
+var $ = require('gulp-load-plugins')();
 
-gulp.task('html', ['layout'], function() {
+// 'layout'
+gulp.task('html', [], function() {
   return gulp
-    .src(config.dist.html)
+    .src(config.src.html)
+    .pipe($.flatten())
     .pipe(gulp.dest(config.dist.path));
 });

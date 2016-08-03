@@ -4,6 +4,7 @@ module.exports = function() {
   var cssType = '.styl';
 
   var config = {
+    cssType: cssType,
     /*
     * File distribution paths
     */
@@ -23,7 +24,6 @@ module.exports = function() {
       alljs: [src + '**/*.js'],
       html: [
         src + '**/*.html',
-        '!' + src + 'index.html',
       ],
       js: [
         src + '**/*.js',

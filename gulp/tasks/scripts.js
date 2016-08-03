@@ -5,6 +5,10 @@ var $ = require('gulp-load-plugins')();
 // Javascript: JS
 gulp.task('js', ['clean:js'], function() {
   return gulp.src(config.src.js)
+    .pipe($.browserify({
+      insertGlobals : true,
+      debug : !gulp.env.production
+    }))
     .pipe($.sourcemaps.init())
     .pipe($.concat('index.js'))
     .pipe($.sourcemaps.write(config.dist.maps))
