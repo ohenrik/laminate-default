@@ -16,10 +16,10 @@ British graduate student John Hellins Quick (1923-1991). It was published in
 1944 by the British Institution of Electrical Engineers Students' Quarterly
 Journal in an article titled "The Turbo-Encabulator in Industry" by J.H. Quick,
 Student <span class="fn">
-http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=5328648 </span> as also
+http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=5328648</span> as also
 noted by consulting firm Arthur D. Little in a 1995 reprint of Quick's
 description, and giving Quick's full name. <span class="fn">
-http://www.adl.com/uploads/tx_extprism/1995_q1_29.pdf </span>
+http://www.adl.com/uploads/tx_extprism/1995_q1_29.pdf</span>
 
 The earliest written U.S. source may have been in 1946, in an Arthur D. Little
 Industrial Bulletin. An early popular American reference to the

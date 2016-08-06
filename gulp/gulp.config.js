@@ -1,6 +1,6 @@
 module.exports = function() {
   var src = './src/';
-  var dist = './dist/';
+  var dist = './laminate_default/templates/';
   var cssType = '.styl';
 
   var config = {
