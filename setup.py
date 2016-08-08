@@ -2,7 +2,7 @@
 from setuptools import setup
 
 setup(name='laminate_default',
-      version='0.1',
+      version='0.2',
       url='https://github.com/ohenrik/laminate_default',
       description='Default theme for laminate',
       long_description=__doc__,

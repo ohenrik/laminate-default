@@ -11,11 +11,11 @@ gulp.task('clean:html', function() {
 });
 
 gulp.task('clean:css', function() {
-  del.sync(['./dist/index.css', './dist/maps/index.css.map']);
+  del.sync([config.dist.assets + 'index.css', config.dist.maps + 'index.css.map']);
 });
 
 gulp.task('clean:js', function() {
-  del.sync(['./dist/index.js', './dist/maps/index.js.map']);
+  del.sync([config.dist.assets + 'index.js', config.dist.maps + 'index.js.map']);
 });
 
 gulp.task('clean:images', function() {

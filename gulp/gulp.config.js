@@ -12,8 +12,9 @@ module.exports = function() {
       path: dist,
       html: dist + '**/*.html',
       maps: 'maps/',
-      images: dist + 'images/',
-      fonts: dist + 'fonts/',
+      assets: dist +'assets/',
+      images: dist + 'assets/images/',
+      fonts: dist + 'assets/fonts/',
     },
 
     /*

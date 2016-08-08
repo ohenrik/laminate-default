@@ -12,5 +12,5 @@ gulp.task('js', ['clean:js'], function() {
     .pipe($.sourcemaps.init())
     .pipe($.concat('index.js'))
     .pipe($.sourcemaps.write(config.dist.maps))
-    .pipe(gulp.dest(config.dist.path));
+    .pipe(gulp.dest(config.dist.assets));
 });

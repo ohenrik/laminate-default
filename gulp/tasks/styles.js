@@ -14,5 +14,5 @@ gulp.task('styles', ['clean:css'], function() {
     }))
     // .pipe($.minifyCss({compatibility: 'ie8'}))
     .pipe($.sourcemaps.write(config.dist.maps))
-    .pipe(gulp.dest(config.dist.path));
+    .pipe(gulp.dest(config.dist.assets));
 });
